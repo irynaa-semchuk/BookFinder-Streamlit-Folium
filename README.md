@@ -30,5 +30,8 @@ streamlit run streamlit_app.py
 - Nearest bookstores and libraries within a given radius
 ![Page6](web-app-strimlit-folium/img/page6.png "Page6")
 
+- Pop-up windows
+![Page8](web-app-strimlit-folium/img/page8.png "Page8")
+
 - Table with additional information about bookstores
 ![Page7](web-app-strimlit-folium/img/page7.png "Page7")
