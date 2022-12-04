@@ -248,7 +248,7 @@ try:
                     market_total += total
                 total_price += market_total
         st.info(f"Загальна вартість замовлення: {total_price} грн.")
-except IndexError:
+except:
     pass
 
 with st.expander("Інформація про доставку 📮"):
@@ -416,7 +416,7 @@ try:
         folium.Marker(location=[lat, lon], popup=popup_deep, tooltip="Бібліотека",
                       icon=folium.Icon(color=color_change(value), icon='glyphicon glyphicon-book'
                                        )).add_to(m)
-except IndexError:
+except:
     pass
 
 data_shop = pd.read_csv("bookshop.csv")
@@ -436,7 +436,7 @@ try:
         folium.Marker(location=[lat, lon], popup=popup_deep, tooltip="Книгарння",
                       icon=folium.Icon(color=color_change(value), prefix='fa', icon='fa-shopping-cart'
                                        )).add_to(m)
-except IndexError:
+except:
     pass
 
 
@@ -460,7 +460,7 @@ try:
         folium.Marker(location=[lat, lon], popup= popup_deep, tooltip=market,
                       icon=folium.Icon(color=color_change(value)
                                        )).add_to(m)
-except IndexError:
+except:
     pass
 
 if "type" not in st.session_state:
