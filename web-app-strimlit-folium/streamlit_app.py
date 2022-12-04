@@ -30,7 +30,7 @@ import geolocation
 
 
 file_path = "./img/"
-img = Image.open(os.path.join(file_path, 'logo2.ico'))
+img = Image.open(os.path.join(file_path, 'logo.ico'))
 st.set_page_config(page_title='Замовлення', page_icon=img, layout="wide", initial_sidebar_state="expanded")
 
 info_img, info_text = st.columns(2)
@@ -224,7 +224,7 @@ if st.button('Пошук замовлення'):
 
 col1, col2 = st.columns(2)
 col0 = [col1,col2]
-image_bookclub = Image.open(os.path.join(file_path, 'bookclub2.png'))
+image_bookclub = Image.open(os.path.join(file_path, 'bookclub.png'))
 image_yakaboo = Image.open(os.path.join(file_path, 'yakaboo.png'))
 list_img0 = [image_bookclub, image_yakaboo]
 tab1, tab2 = st.tabs(["Замовленя з вартісю доставки", "Без вартості доставки"])
